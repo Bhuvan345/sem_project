@@ -26,9 +26,6 @@ export default function Checkout() {
     setActiveStep((prevActiveStep) => prevActiveStep - 1);
   };
 
-  
-
-
   return (
     <div className='px-10 lg:px-20 mt-10'> <Box sx={{ width: '100%' }} >
       <Stepper activeStep={step}>
@@ -61,14 +58,11 @@ export default function Checkout() {
               sx={{ mr: 1 }}
             >
               Back
-            </Button>
-             
-
-            
+            </Button>            
           </Box>
 
           <div>
-            {step===2?<DeliveryAddressForm/>:<OrderSummary/>}
+            {step==2?<DeliveryAddressForm/>:<OrderSummary/>}
           </div>
         </React.Fragment>
       )}

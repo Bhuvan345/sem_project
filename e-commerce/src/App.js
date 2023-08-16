@@ -7,6 +7,7 @@ import Product from "./customer/components/Product/Product";
 import ProductDetails from "./customer/components/ProductDetails/ProductDetails";
 import Cart from "./customer/components/Cart/Cart";
 import Checkout from "./customer/components/Checkout/Checkout";
+import DeliveryAddressForm from "./customer/components/Checkout/DeliveryAddressForm";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         {/* </ProductDetails /> */}
         {/* <Cart /> */}
         <Checkout />
+        {/* <DeliveryAddressForm /> */}
       </div>
       <Footer />
     </div>
