@@ -7,6 +7,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { Avatar } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const navigation = {
   categories: [
@@ -144,6 +145,7 @@ function classNames(...classes) {
 
 export default function Navigation() {
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
 
   return (
     <div className="bg-white z-50">
